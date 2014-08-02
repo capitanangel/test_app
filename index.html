@@ -13,15 +13,21 @@
 
     // device APIs are available
     //
-    function onDeviceReady() {
-        // Register the event listener
-        document.addEventListener("menubutton", onMenuKeyDown, false);
+
+	
+	    function onDeviceReady() {
+        var element = document.getElementById('deviceProperties');
+        element.innerHTML = 'Device Name: '     + device.name     + '<br />' +
+                            'Device Cordova: '  + device.cordova  + '<br />' +
+                            'Device Platform: ' + device.platform + '<br />' +
+                            'Device UUID: '     + device.uuid     + '<br />' +
+                            'Device Version: '  + device.version  + '<br />';
+							'TEST 1 2 3'
     }
 
     // Handle the menu button
     //
-    function onMenuKeyDown() {
-    }
+
 
     </script>
   </head>
